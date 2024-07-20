@@ -1,0 +1,340 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    overflow: scroll;
+   background-size: cover;
+}
+.header{
+    z-index: 23;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #652413;
+}
+.header ul{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    justify-content: center;
+    padding: 4px;
+}
+.header ul li{
+color: antiquewhite;
+     padding:0 20px;
+}
+.header ul li button{
+    background-color:#652413;
+    color: antiquewhite;
+}
+.header ul li:hover{
+    font-size: 3vh;
+    background-image: url("alaska-8448009_1280.jpg");
+    background-size: cover;
+    backdrop-filter: blur(6px);
+}
+ 
+
+.taj_mahal{         
+    display: flex;
+    width: 100%;
+    background-color: #eae7db;
+    display: flex;
+    height: 500px;
+    transition: all 0.5s ease-in;
+}
+.taj_mahal .tinfo h1{
+    position: relative;
+    top: 30px;
+    left:595px;
+    
+    font-size: 50px;
+    color: #5f210d;
+}
+.taj_mahal .tinfo p{
+    position: relative;
+    top: 30px;
+    left: 595px;
+    color:#5f210d ;
+    font-size: 30px;
+
+}
+.taj_mahal img{
+    
+    /* position: inherit; */
+    z-index: 9;
+    box-shadow: 0 0 50px #4c2722;
+    position: absolute;
+    right: 0;
+    height:495px ;
+    justify-content: end;
+    width: 400px;
+    border: 2.5px solid #e0b59c;
+    transition: all ease-in-out 2s;
+}
+.taj_mahal img:hover{
+    box-shadow:0 0 50px #143c69;
+    transition: all 2s ease-in-out;
+}
+
+.taj_mahal .taj_left {
+    position: absolute;
+ 
+    /* left: 890px; */
+    display: grid;
+    place-items: center;
+    /* align-content: end; */
+    height: 495px;
+    width: 454px;
+  
+}
+
+.taj_mahal .taj_left .hexagon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 2px 5px) saturate(2);
+}
+.taj_mahal .taj_left .hexagon .hex{
+   
+    overflow: hidden;
+   width: 144px;
+   height: 150px;
+   display: flex;
+   margin: 10px;
+   background-color: #dbbc9b;
+   /* background-color: #e0b59c; */
+   clip-path: polygon(50% 0% , 100% 25% , 100% 75% , 50% 100% , 0% 75%, 0% 25%);
+
+}
+.taj_mahal .taj_left .hexagon:nth-child(1){
+    top: 0;
+}
+.taj_mahal .taj_left .hexagon:nth-child(3){
+    bottom: 0;
+}
+.taj_mahal .taj_left .hexagon .hex img{
+    filter: brightness(.6);
+    filter: blur(2px);
+    position: inherit;
+    top: 20px;
+ height: 105%;
+ width: 140%;
+ transition: all 1.3s;
+}
+.taj_mahal .taj_left .hexagon .hex:hover img{
+    filter: blur(0);
+    transition:all 1.3s;
+}
+
+.paris .paris-left{
+    position: absolute;
+    top: 30px;
+    left: 875px;
+    display: grid;
+    place-items: center;
+    /* align-content: end; */
+    height: 465px;
+    width: 454px;
+  
+}
+.paris .paris-left .hexagon{
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 2px 5px) saturate(2);
+
+
+}
+.paris .paris-left .hexagon .hex{
+   
+    overflow: hidden;
+   width: 144px;
+   height: 150px;
+   display: flex;
+   margin: 10px;
+   background-color: #dbbc9b;
+   /* background-color: #e0b59c; */
+   clip-path: polygon(50% 0% , 100% 25% , 100% 75% , 50% 100% , 0% 75%, 0% 25%);
+
+}
+.paris .paris-left .hexagon:nth-child(1){
+    top: 0;
+}
+.paris .paris-left .hexagon:nth-child(3){
+    bottom: 0;
+}
+.paris .paris-left .hexagon .hex img{
+    box-shadow: 0 0 20px #0f025a;
+    filter: brightness(.6);
+    position: inherit;
+    top: 20px;
+ height: 105%;
+ width: 105%;
+}
+.paris .paris-left .hexagon .hex:hover img{
+    filter: brightness(1);
+    transition: all 2s;
+   
+}
+
+.paris{
+    background-color:#617387;
+    width: 100%;
+    display: flex;
+    height: 500px;
+    margin-left: 0;
+}
+.paris .info h1{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-size: 50px;
+    color: #efd6b0;
+}
+.paris .info p{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-size:20px ;
+    color:#efd6b0 ;
+}
+.paris img{
+    box-shadow: 0 0 50px #082b6c;
+    z-index: 9;
+    border: 2.5px solid #ffbe7b;
+    position: relative;
+    top: 30px;
+    height:465px;
+    width: 400px;
+    transition: all 1s;
+}
+.paris img:hover{
+    box-shadow: 0 0 50px #eae7db;
+    transition: all 1s ease-in-out;
+}
+.egypt .paris-left{
+    position: absolute;
+   
+    left: 875px;
+    display: grid;
+    place-items: center;
+    /* align-content: end; */
+    height: 495px;
+    width: 454px;
+  
+}
+.egypt  .paris-left .hexagon{  
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 2px 5px) saturate(2);
+}
+.egypt .paris-left .hexagon .hex{
+    overflow: hidden;
+   width: 144px;
+   height: 150px;
+   display: flex;
+   margin: 10px;
+   background-color: #dbbc9b;
+   /* background-color: #e0b59c; */
+   clip-path: polygon(50% 0% , 100% 25% , 100% 75% , 50% 100% , 0% 75%, 0% 25%);
+
+}
+.egypt .paris-left .hexagon:nth-child(1){
+    top: 0;
+}
+.egypt .paris-left .hexagon:nth-child(3){
+    bottom: 0;
+}
+.egypt  .paris-left .hexagon .hex img{
+    box-shadow: 0 0 20px #0f025a;
+    filter: brightness(.6);
+    position: inherit;
+    top: 20px;
+ height: 105%;
+ width: 105%;
+}
+.egypt .paris-left .hexagon .hex:hover img{
+    filter: brightness(1);
+    transition: all 2s;
+   
+}
+
+.egypt{
+    background-color:#734e26;
+    width: 100%;
+    display: flex;
+    height: 500px;
+    margin-left: 0;
+}
+.egypt img{
+    box-shadow: 0 0 50px #ad8355;
+    z-index: 9;
+    border: 2.5px solid #ffbe7b;
+    position: relative;
+    top: 0px;
+    height:495px;
+    width: 400px;
+}
+.egypt .einfo h1{
+    position: relative;
+    top: 40px;
+    left: 15px;
+    font-size: 50px;
+    color:#dbbc9b ;
+}
+.egypt .einfo p{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-size:20px ;
+    color:#dbbc9b ;
+}
+
+.foot{
+    height: 160px;
+    background-color: #5f210d;
+    width: 100%;
+    bottom: 0;
+}
+#cnt{
+
+font-size: 3vh;
+    color: antiquewhite;
+    position: relative;
+top: 12px;
+bottom: 0;
+right: 20px;
+
+}
+.foot .contact ul{
+    list-style-type: none;
+    display: flex;
+    height: 100px;
+    position: relative;
+    right: 10px;
+    justify-content: end;
+    padding: 15px 0;
+
+}
+.foot .contact ul li img{
+    border: 1px solid #000000;
+    position: inherit;
+    height: 75px;
+    padding: 15px 0;
+    mix-blend-mode: multiply;
+    width: auto;
+
+}
